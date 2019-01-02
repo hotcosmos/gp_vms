@@ -3,7 +3,7 @@
 ![https://img.shields.io/badge/springboot-2.0.4-yellow.svg?longCache=true&style=popout-square](https://img.shields.io/badge/springboot-2.0.4-yellow.svg?longCache=true&style=popout-square)
 ![https://img.shields.io/badge/spring%20security-5.0.7-green.svg?longCache=true&style=popout-square](https://img.shields.io/badge/spring%20security-5.0.7-green.svg?longCache=true&style=popout-square)
 
-FEBS-Security是一个简单高效的后台权限管理系统。项目基础框架采用全新的Java Web开发框架 —— Spring Boot2.0.4，消除了繁杂的XML配置，使得二次开发更为简单；数据访问层采用Mybatis，同时引入了通用Mapper和PageHelper插件，可快速高效的对单表进行增删改查操作，消除了大量传统XML配置SQL的代码；安全框架采用Spring Security 5.0.7，可实现对按钮级别的权限控制，并集成了社交账户登录（QQ和微信）以及手机验证码登录；前端页面使用Bootstrap构建，主题风格为时下Google最新设计语言Material Design，并提供多套配色以供选择。FEBS意指：Fast，Easy use，Beautiful和Safe。
+vms是一个简单高效的增值税管理系统。项目基础框架采用全新的Java Web开发框架 —— Spring Boot2.0.4，消除了繁杂的XML配置，使得二次开发更为简单；数据访问层采用Mybatis，同时引入了通用Mapper和PageHelper插件，可快速高效的对单表进行增删改查操作，消除了大量传统XML配置SQL的代码；安全框架采用Spring Security 5.0.7，可实现对按钮级别的权限控制，并集成了社交账户登录（QQ和微信）以及手机验证码登录；前端页面使用Bootstrap构建，主题风格为时下Google最新设计语言Material Design，并提供多套配色以供选择。
 
 [项目文档](https://github.com/hotcosmos/gp_vms.git)
 
@@ -33,12 +33,36 @@ FEBS-Security是一个简单高效的后台权限管理系统。项目基础框�
 ├─任务调度
 │  ├─定时任务
 │  └─调度日志
-└─网络资源
-    ├─天气查询
-    ├─影视资讯
-    │  ├─即将上映
-    │  └─正在热映
-    └─每日一文
+├─交易管理
+│  └─新增交易
+├─客户管理
+│  └─新增客户
+├─纸票管理
+│  ├─发票开具
+│  │  ├─开票申请
+│  │  ├─票据编辑
+│  │  ├─票据审核
+│  │  ├─发票开具
+│  │  ├─发票打印
+│  │  └─发票补打
+│  ├─发票作废
+│  │  ├─作废申请
+│  │  ├─作废审核
+│  │  └─发票作废
+│  └─发票红冲
+│     ├─红冲申请
+│     ├─红冲审核
+│     └─发票红冲
+├─电票管理
+│  ├─发票开具
+│  │  └─发票开具
+│  └─发票红冲
+│     ├─红冲申请
+│     ├─红冲审核
+│     └─发票红冲
+├─综合管理
+│  ├─交易查询
+│  └─票据查询
 ```
 
 
@@ -76,37 +100,53 @@ FEBS-Security是一个简单高效的后台权限管理系统。项目基础框�
 - 版本管理：git
 
 ## 模块说明
-系统分为以下五个模块：
+系统分为以下八个模块：
 <table>
 <tr>
 	<th>模块</th>
 	<th>说明</th>
 </tr>
 <tr>
-	<td>febs-common</td>
+	<td>vms-common</td>
 	<td>基础模块，主要包含一些工具类，基础配置</td>
 </tr>	
 <tr>
-	<td>febs-system</td>
+	<td>vms-system</td>
 	<td>系统模块，增删改查服务</td>
 </tr>
 <tr>
-	<td>febs-quartz</td>
+	<td>vms-quartz</td>
 	<td>任务调度模块，处理定时任务</td>
 </tr>
 <tr>
-	<td>febs-security</td>
+	<td>vms-security</td>
 	<td>安全模块，和安全有关的都在这个模块里</td>
 </tr>
 <tr>
-	<td>febs-web</td>
+	<td>vms-web</td>
 	<td>web模块，包含前端部分和控制层</td>
 </tr>
-</table>	
-
-## todo
-- [ ]  整合JWT
-- [ ]  SSO
+<tr>
+	<td>vms-transaction</td>
+	<td>交易管理模块，对于交易信息的增删改查操作</td>
+</tr>
+<tr>
+	<td>vms-customer</td>
+	<td>客户管理模块，对于客户信息的增删改查操作</td>
+</tr>
+<tr>
+	<td>vms-paperInvoice</td>
+	<td>纸票管理模块，纸质发票的开具、作废、红冲操作</td>
+</tr>
+<tr>
+	<td>vms-electronicInvoice</td>
+	<td>电票管理模块，电子发票的手动开具、自动开具失败处理、电票红冲操作</td>
+</tr>
+<tr>
+	<td>vms-manage</td>
+	<td>综合管理模块，交易信息和票据信息的查询以及相关报表的下载</td>
+</tr>
+</table>
 
 ## 系统预览
 
@@ -141,14 +181,5 @@ FEBS-Security是一个简单高效的后台权限管理系统。项目基础框�
 ![5e6d35e4390cf7f0752d7864ad701e2b.png](http://olwqftdzl.bkt.clouddn.com/18-4-18/81830531.jpg)
 
 ## 更新日志
-**2018年11月26日 by[liuliuzx](https://github.com/liuliuzx)**
-
-新增thymeleaf自定义数据字典方言标签，具体使用方法：
-
-```
-<dict:show fieldName="ssex" keyy="1"></dict:show>
-<dict:select fieldName="ssex"  name="type" keyy="1" class="form-control" id="ssex"></dict:select>
-```
-
-### 反馈交流
-![](http://olwqftdzl.bkt.clouddn.com/18-9-18/77785846.jpg)
+**2019年1月2日 by[hotcosmos](https://github.com/hotcosmos)**
+**项目创建**
