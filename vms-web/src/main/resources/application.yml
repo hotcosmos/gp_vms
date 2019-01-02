@@ -9,7 +9,7 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/gp_vms?useUnicode=true&characterEncoding=utf8
     username: root
-    password: 123456
+    password: 950426
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
       minimum-idle: 5
