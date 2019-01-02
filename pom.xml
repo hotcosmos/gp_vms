@@ -18,6 +18,11 @@
         <module>vms-security</module>
         <module>vms-system</module>
         <module>vms-web</module>
+        <module>vms-transaction</module>
+        <module>vms-customer</module>
+        <module>vms-paperInvoice</module>
+        <module>vms-electronicInvoice</module>
+        <module>vms-manage</module>
     </modules>
 
     <parent>
