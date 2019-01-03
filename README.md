@@ -73,7 +73,7 @@ vms是一个简单高效的增值税管理系统。项目基础框架采用全�
 - 基础框架：Spring Boot 2.0.4.RELEASE
 - 持久层框架：Mybatis 3.4.5
 - 安全框架：Spring Security 5.0.7
-- 摸板引擎：Thymeleaf 3.0.9.RELEASE
+- 模板引擎：Thymeleaf 3.0.9.RELEASE
 - 数据库连接池：Hikari
 - 缓存框架：Redis
 - 日志打印：logback
@@ -96,7 +96,7 @@ vms是一个简单高效的增值税管理系统。项目基础框架采用全�
 - 语言：Java 8
 - IDE：Eclipse Oxygen & IDEA 2018.1.4(Ultimate Edition)
 - 依赖管理：Maven
-- 数据库：MySQL5.7
+- 数据库：MySQL5.5.60
 - 版本管理：git
 
 ## 模块说明

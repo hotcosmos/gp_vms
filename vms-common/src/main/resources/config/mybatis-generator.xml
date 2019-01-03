@@ -27,26 +27,27 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 生成Model类存放位置 -->
-        <javaModelGenerator targetPackage="cc.mrbird.gen.domain" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.hotcosmos.vms.domain.invoice" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- 生成映射文件存放位置 -->
-        <sqlMapGenerator targetPackage="cc.mrbird.gen.mapper" targetProject="src/main/java/">
+        <sqlMapGenerator targetPackage="mapper.invoice" targetProject="src/main/resources/">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 生成Dao类存放位置 -->
         <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件的代码
             type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
             type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="cc.mrbird.gen.dao" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.hotcosmos.vms.dao.invoice"
+                             targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 配置需要生成的表 -->
-        <table tableName="T_JOB_LOG" domainObjectName="JobLog" enableCountByExample="false"
-               enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <generatedKey column="id" sqlStatement="mysql" identity="true"/>
+        <table tableName="vms_customer_info" domainObjectName="vmsCustomerInfo" enableCountByExample="true"
+               enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <generatedKey column="CUSTOMER_ID" sqlStatement="mysql" identity="true"/>
         </table>
     </context>
 </generatorConfiguration>

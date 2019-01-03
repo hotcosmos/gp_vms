@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hotcosmos.vms.dao.invoice.vmsBillItemInfoMapper">
+    <resultMap id="BaseResultMap" type="com.hotcosmos.vms.domain.invoice.vmsBillItemInfo">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="BILL_ID" jdbcType="VARCHAR" property="billId"/>
+        <id column="BILL_ITEM_ID" jdbcType="VARCHAR" property="billItemId"/>
+        <result column="GOODS_ID" jdbcType="VARCHAR" property="goodsId"/>
+        <result column="GOODS_NAME" jdbcType="VARCHAR" property="goodsName"/>
+        <result column="SPECANDMODEL" jdbcType="VARCHAR" property="specandmodel"/>
+        <result column="GOODS_UNIT" jdbcType="VARCHAR" property="goodsUnit"/>
+        <result column="GOODS_NO" jdbcType="DECIMAL" property="goodsNo"/>
+        <result column="GOODS_PRICE" jdbcType="DECIMAL" property="goodsPrice"/>
+        <result column="TAX_FLAG" jdbcType="CHAR" property="taxFlag"/>
+        <result column="AMT" jdbcType="DECIMAL" property="amt"/>
+        <result column="TAX_RATE" jdbcType="DECIMAL" property="taxRate"/>
+        <result column="TAX_AMT" jdbcType="DECIMAL" property="taxAmt"/>
+        <result column="TAX_ITEM" jdbcType="VARCHAR" property="taxItem"/>
+        <result column="IS_MAINGOODS" jdbcType="CHAR" property="isMaingoods"/>
+        <result column="ROW_NATURE" jdbcType="CHAR" property="rowNature"/>
+        <result column="DIS_ITEM_ID" jdbcType="VARCHAR" property="disItemId"/>
+        <result column="DISCOUNT_RATE" jdbcType="DECIMAL" property="discountRate"/>
+    </resultMap>
+</mapper>

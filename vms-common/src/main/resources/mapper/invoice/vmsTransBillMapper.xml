@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hotcosmos.vms.dao.invoice.vmsTransBillMapper">
+    <resultMap id="BaseResultMap" type="com.hotcosmos.vms.domain.invoice.vmsTransBill">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="TRANS_ID" jdbcType="VARCHAR" property="transId"/>
+        <id column="BILL_ID" jdbcType="VARCHAR" property="billId"/>
+        <id column="BILL_ITEM_ID" jdbcType="VARCHAR" property="billItemId"/>
+        <result column="AMT_CNY" jdbcType="DECIMAL" property="amtCny"/>
+        <result column="TAX_AMT_CNY" jdbcType="DECIMAL" property="taxAmtCny"/>
+        <result column="INCOME_CNY" jdbcType="DECIMAL" property="incomeCny"/>
+        <result column="BALANCE" jdbcType="VARCHAR" property="balance"/>
+        <result column="CHERNUM" jdbcType="VARCHAR" property="chernum"/>
+        <result column="MARK" jdbcType="VARCHAR" property="mark"/>
+    </resultMap>
+</mapper>

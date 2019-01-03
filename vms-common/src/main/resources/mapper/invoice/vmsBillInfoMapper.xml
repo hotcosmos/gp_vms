@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hotcosmos.vms.dao.invoice.vmsBillInfoMapper">
+    <resultMap id="BaseResultMap" type="com.hotcosmos.vms.domain.invoice.vmsBillInfo">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="BILL_ID" jdbcType="VARCHAR" property="billId"/>
+        <result column="BILL_CODE" jdbcType="VARCHAR" property="billCode"/>
+        <result column="BILL_NO" jdbcType="VARCHAR" property="billNo"/>
+        <result column="BILL_DATE" jdbcType="VARCHAR" property="billDate"/>
+        <result column="CUSTOMER_NAME" jdbcType="VARCHAR" property="customerName"/>
+        <result column="CUSTOMER_TAXNO" jdbcType="VARCHAR" property="customerTaxno"/>
+        <result column="CUSTOMER_ADDRESSANDPHONE" jdbcType="VARCHAR" property="customerAddressandphone"/>
+        <result column="CUSTOMER_BANKANDACCOUNT" jdbcType="VARCHAR" property="customerBankandaccount"/>
+        <result column="AMT_SUM" jdbcType="DECIMAL" property="amtSum"/>
+        <result column="TAX_AMT_SUM" jdbcType="DECIMAL" property="taxAmtSum"/>
+        <result column="SUM_AMT" jdbcType="DECIMAL" property="sumAmt"/>
+        <result column="REMARK" jdbcType="VARCHAR" property="remark"/>
+        <result column="DRAWER" jdbcType="VARCHAR" property="drawer"/>
+        <result column="REVIEWER" jdbcType="VARCHAR" property="reviewer"/>
+        <result column="PAYEE" jdbcType="VARCHAR" property="payee"/>
+        <result column="NAME" jdbcType="VARCHAR" property="name"/>
+        <result column="TAXNO" jdbcType="VARCHAR" property="taxno"/>
+        <result column="ADDRESSANDPHONE" jdbcType="VARCHAR" property="addressandphone"/>
+        <result column="BANKANDACCOUNT" jdbcType="VARCHAR" property="bankandaccount"/>
+        <result column="INSTCODE" jdbcType="VARCHAR" property="instcode"/>
+        <result column="CANCEL_INITIATOR" jdbcType="VARCHAR" property="cancelInitiator"/>
+        <result column="CANCEL_AUDITOR" jdbcType="VARCHAR" property="cancelAuditor"/>
+        <result column="TAX_DISK_NO" jdbcType="VARCHAR" property="taxDiskNo"/>
+        <result column="MACHINE_NO" jdbcType="VARCHAR" property="machineNo"/>
+        <result column="NOTICE_NO" jdbcType="VARCHAR" property="noticeNo"/>
+        <result column="ORI_BILL_CODE" jdbcType="VARCHAR" property="oriBillCode"/>
+        <result column="ORI_BILL_NO" jdbcType="VARCHAR" property="oriBillNo"/>
+        <result column="DATASTATUS" jdbcType="VARCHAR" property="datastatus"/>
+        <result column="DESCRIPTION" jdbcType="VARCHAR" property="description"/>
+        <result column="IS_HANDIWORK" jdbcType="CHAR" property="isHandiwork"/>
+        <result column="ISSUE_TYPE" jdbcType="CHAR" property="issueType"/>
+        <result column="FAPIAO_TYPE" jdbcType="VARCHAR" property="fapiaoType"/>
+        <result column="BILL_BUSINESSID" jdbcType="VARCHAR" property="billBusinessid"/>
+        <result column="APPLY_DATE" jdbcType="VARCHAR" property="applyDate"/>
+        <result column="BALANCE" jdbcType="DECIMAL" property="balance"/>
+        <result column="CANCEL_REASON" jdbcType="VARCHAR" property="cancelReason"/>
+        <result column="CUSTOMER_ID" jdbcType="VARCHAR" property="customerId"/>
+        <result column="CHERNUM" jdbcType="VARCHAR" property="chernum"/>
+        <result column="REPNUM" jdbcType="VARCHAR" property="repnum"/>
+        <result column="TTMPRCNO" jdbcType="VARCHAR" property="ttmprcno"/>
+        <result column="FEETYP" jdbcType="VARCHAR" property="feetyp"/>
+        <result column="BILLFREQ" jdbcType="VARCHAR" property="billfreq"/>
+        <result column="HISSDTE" jdbcType="VARCHAR" property="hissdte"/>
+        <result column="DSOURCE" jdbcType="VARCHAR" property="dsource"/>
+        <result column="CHANNEL" jdbcType="VARCHAR" property="channel"/>
+        <result column="HISTORYFLAG" jdbcType="VARCHAR" property="historyflag"/>
+        <result column="IS_REPORTED" jdbcType="CHAR" property="isReported"/>
+        <result column="FILE_STATUS" jdbcType="CHAR" property="fileStatus"/>
+        <result column="IS_SENDED" jdbcType="CHAR" property="isSended"/>
+        <result column="PRINT_COUNT" jdbcType="DECIMAL" property="printCount"/>
+        <result column="RECYCLE_STATUS" jdbcType="CHAR" property="recycleStatus"/>
+        <result column="PDF_URL" jdbcType="VARCHAR" property="pdfUrl"/>
+    </resultMap>
+</mapper>

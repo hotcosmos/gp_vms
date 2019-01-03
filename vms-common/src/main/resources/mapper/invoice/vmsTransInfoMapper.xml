@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hotcosmos.vms.dao.invoice.vmsTransInfoMapper">
+    <resultMap id="BaseResultMap" type="com.hotcosmos.vms.domain.invoice.vmsTransInfo">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="TRANS_ID" jdbcType="BIGINT" property="transId"/>
+        <result column="TRANS_DATE" jdbcType="VARCHAR" property="transDate"/>
+        <result column="TRANS_TYPE" jdbcType="VARCHAR" property="transType"/>
+        <result column="CUSTOMER_ACCOUNT" jdbcType="VARCHAR" property="customerAccount"/>
+        <result column="TAX_FLAG" jdbcType="CHAR" property="taxFlag"/>
+        <result column="TAX_RATE" jdbcType="DECIMAL" property="taxRate"/>
+        <result column="IS_REVERSE" jdbcType="CHAR" property="isReverse"/>
+        <result column="REMARK" jdbcType="VARCHAR" property="remark"/>
+        <result column="ORG_CURR_CODE" jdbcType="VARCHAR" property="orgCurrCode"/>
+        <result column="ORG_ACC_NO" jdbcType="VARCHAR" property="orgAccNo"/>
+        <result column="AMT_CCY" jdbcType="DECIMAL" property="amtCcy"/>
+        <result column="REVERSE_TRANS_ID" jdbcType="VARCHAR" property="reverseTransId"/>
+        <result column="SHORT_AND_OVER" jdbcType="DECIMAL" property="shortAndOver"/>
+        <result column="BALANCE" jdbcType="DECIMAL" property="balance"/>
+        <result column="INSTCODE" jdbcType="VARCHAR" property="instcode"/>
+        <result column="ORIG_INSTCODE" jdbcType="VARCHAR" property="origInstcode"/>
+        <result column="DATASTATUS" jdbcType="VARCHAR" property="datastatus"/>
+        <result column="CUSTOMER_ID" jdbcType="VARCHAR" property="customerId"/>
+        <result column="AMT_CNY" jdbcType="DECIMAL" property="amtCny"/>
+        <result column="TAX_AMT_CNY" jdbcType="DECIMAL" property="taxAmtCny"/>
+        <result column="INCOME_CNY" jdbcType="DECIMAL" property="incomeCny"/>
+        <result column="ORG_TRANS_TYPE" jdbcType="VARCHAR" property="orgTransType"/>
+        <result column="ORG_TRANS_SUB_TYPE" jdbcType="VARCHAR" property="orgTransSubType"/>
+        <result column="REVERSE_TRANS_DATE" jdbcType="VARCHAR" property="reverseTransDate"/>
+        <result column="REVERSE_TRANS_BUS_ID" jdbcType="VARCHAR" property="reverseTransBusId"/>
+        <result column="TRANS_BUS_ID" jdbcType="VARCHAR" property="transBusId"/>
+        <result column="TRANS_CURR" jdbcType="VARCHAR" property="transCurr"/>
+        <result column="TAX_AMT_CCY" jdbcType="DECIMAL" property="taxAmtCcy"/>
+        <result column="INCOME_CCY" jdbcType="DECIMAL" property="incomeCcy"/>
+        <result column="SURTAX1_AMT_CNY" jdbcType="DECIMAL" property="surtax1AmtCny"/>
+        <result column="SURTAX2_AMT_CNY" jdbcType="DECIMAL" property="surtax2AmtCny"/>
+        <result column="SURTAX3_AMT_CNY" jdbcType="DECIMAL" property="surtax3AmtCny"/>
+        <result column="SURTAX4_AMT_CNY" jdbcType="DECIMAL" property="surtax4AmtCny"/>
+        <result column="TRANS_FAPIAO_FLAG" jdbcType="VARCHAR" property="transFapiaoFlag"/>
+        <result column="FAPIAO_DATE" jdbcType="VARCHAR" property="fapiaoDate"/>
+        <result column="FAPIAO_TYPE" jdbcType="VARCHAR" property="fapiaoType"/>
+        <result column="TRANS_FLAG" jdbcType="VARCHAR" property="transFlag"/>
+        <result column="VAT_RATE_CODE" jdbcType="VARCHAR" property="vatRateCode"/>
+        <result column="BILLING_TIME" jdbcType="VARCHAR" property="billingTime"/>
+        <result column="ASSOCIATE_ACCOUNT_NO" jdbcType="VARCHAR" property="associateAccountNo"/>
+        <result column="ORIG_CAP_WORKSTATION" jdbcType="VARCHAR" property="origCapWorkstation"/>
+        <result column="ITEM_CODE" jdbcType="VARCHAR" property="itemCode"/>
+        <result column="INSTNAME" jdbcType="VARCHAR" property="instname"/>
+        <result column="CHERNUM" jdbcType="VARCHAR" property="chernum"/>
+        <result column="REPNUM" jdbcType="VARCHAR" property="repnum"/>
+        <result column="TTMPRCNO" jdbcType="VARCHAR" property="ttmprcno"/>
+        <result column="FEETYP" jdbcType="VARCHAR" property="feetyp"/>
+        <result column="BILLFREQ" jdbcType="VARCHAR" property="billfreq"/>
+        <result column="POLYEAR" jdbcType="DECIMAL" property="polyear"/>
+        <result column="HISSDTE" jdbcType="VARCHAR" property="hissdte"/>
+        <result column="OCCDATE" jdbcType="VARCHAR" property="occdate"/>
+        <result column="DSOURCE" jdbcType="VARCHAR" property="dsource"/>
+        <result column="CHANNEL" jdbcType="VARCHAR" property="channel"/>
+        <result column="PREMTERM" jdbcType="DECIMAL" property="premterm"/>
+        <result column="INSTFROM" jdbcType="VARCHAR" property="instfrom"/>
+        <result column="INSTTO" jdbcType="VARCHAR" property="instto"/>
+        <result column="WITHDRAWYN" jdbcType="VARCHAR" property="withdrawyn"/>
+        <result column="ALTREF" jdbcType="VARCHAR" property="altref"/>
+        <result column="ZNTCODE05" jdbcType="VARCHAR" property="zntcode05"/>
+        <result column="PLANLONGDESC" jdbcType="VARCHAR" property="planlongdesc"/>
+        <result column="HISTORYFLAG" jdbcType="VARCHAR" property="historyflag"/>
+        <result column="TAX_CNY_BALANCE" jdbcType="DECIMAL" property="taxCnyBalance"/>
+        <result column="DATA_SOURCES" jdbcType="VARCHAR" property="dataSources"/>
+        <result column="ORG_TRANS_ID" jdbcType="VARCHAR" property="orgTransId"/>
+        <result column="NARRITIVE1" jdbcType="VARCHAR" property="narritive1"/>
+        <result column="NARRITIVE2" jdbcType="VARCHAR" property="narritive2"/>
+        <result column="INSCOD" jdbcType="VARCHAR" property="inscod"/>
+        <result column="INSNAM" jdbcType="VARCHAR" property="insnam"/>
+        <result column="BUSINESSID" jdbcType="VARCHAR" property="businessid"/>
+        <result column="QDFLAG" jdbcType="CHAR" property="qdflag"/>
+        <result column="HESITATE_PERIOD" jdbcType="VARCHAR" property="hesitatePeriod"/>
+        <result column="ISYK" jdbcType="CHAR" property="isyk"/>
+        <result column="BATCH_NO" jdbcType="VARCHAR" property="batchNo"/>
+        <result column="BATCH_TYPE" jdbcType="CHAR" property="batchType"/>
+        <result column="TRANS_UUID" jdbcType="VARCHAR" property="transUuid"/>
+        <result column="CANCELREASON" jdbcType="VARCHAR" property="cancelreason"/>
+        <result column="SYNCH_DATE" jdbcType="TIMESTAMP" property="synchDate"/>
+    </resultMap>
+</mapper>
